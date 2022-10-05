@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT1 Biến, kiểu dữ liệu toán tử</title>
+</head>
+<body>
+<script>
+    let inputphisic;
+    let inputchemiscal;
+    let inputbiography;
+    inputphisic=prompt("Nhập điểm vật lý:");
+    inputchemiscal=prompt("Nhập điểm hóa học");
+    inputbiography=prompt("Nhập điểm sinh học");
+    let p=parseFloat(inputphisic);
+    let c=parseFloat(inputchemiscal);
+    let b=parseFloat(inputbiography);
+    document.write("Điểm vật lý: "+p);
+    document.write('<br/>')
+    document.write("Điểm hóa học:"+c);
+    document.write('<br/>')
+    document.write("Điểm sinh học"+b);
+    document.write('<br/>')
+    let sum = (p + c + b);
+    let avg= (sum/3).toFixed(2);
+    document.write("Tổng điểm 3 môn:"+sum);
+    document.write('<br/>')
+    document.writeln("Điểm trung bình:"+avg);
+    document.write('<br/>')
+</script>
+</body>
+</html>
